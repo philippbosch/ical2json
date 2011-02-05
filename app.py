@@ -6,8 +6,12 @@ from urllib import urlopen
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return u'Please use like <code>%swww.myserver.com/path/to/file.ics' % request.host_url
+
 @app.route('/<path:url>')
-def index(url):
+def convert_from_url(url):
     url = 'http://%s' % url
     uh = urlopen(url)
     if uh.getcode() != 200:
