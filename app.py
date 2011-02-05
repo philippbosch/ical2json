@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return u'Please use like <code>%swww.myserver.com/path/to/file.ics' % request.host_url
+    return u'Please use like <code>http://<script>document.write(location.host);</script><noscript>ical2json.ep.io</noscript>/www.myserver.com/path/to/file.ics</code>'
 
 @app.route('/<path:url>')
 def convert_from_url(url):
