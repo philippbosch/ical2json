@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from flask import Flask, abort, jsonify, request
 from icalendar import Calendar
@@ -8,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return u'Please use like <code>http://<script>document.write(location.host);</script><noscript>ical2json.ep.io</noscript>/www.myserver.com/path/to/file.ics</code>'
+    return u'Please use like <code>http://<script>document.write(location.host);</script><noscript>ical2json.ep.io</noscript>/www.myserver.com/path/to/file.ics</code><br>Source code and instructions at <a href="http://github.com/philippbosch/ical2json">http://github.com/philippbosch/ical2json</a>.'
 
 @app.route('/<path:url>')
 def convert_from_url(url):
