@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 from flask import Flask, abort, jsonify, request
 from icalendar import Calendar
 from urllib import urlopen
@@ -39,4 +40,5 @@ def convert_from_url(url):
     return resp
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)

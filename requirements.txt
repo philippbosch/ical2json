@@ -1,2 +1,7 @@
-Flask
-icalendar
+Flask==0.8
+Jinja2==2.6
+Werkzeug==0.8.3
+distribute==0.6.19
+icalendar==3.0.1b2
+pytz==2012c
+wsgiref==0.1.2
