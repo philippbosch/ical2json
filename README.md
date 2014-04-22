@@ -61,13 +61,13 @@ If you want to consume the JSON data with JavaScript on a website you probably n
 Local installation
 ------------------
 
-If you wanted to install this on your own server (I encourage you to do so) you would need the followin prerequisites:
+If you wanted to install this on your own server (I encourage you to do so) you would need the following prerequisites:
 
 * [Python](http://www.python.org/)
 * [Flask](http://flask.pocoo.org/)
 * [icalendar](http://pypi.python.org/pypi/icalendar)
 
-My installation runs on [ep.io](http://ep.io/) just fine. It's a matter of minutes to install it there if you look through the docs.
+
 
 
 Status
