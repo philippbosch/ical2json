@@ -23,7 +23,7 @@ def convert_from_url(url):
         abort(404)
     ics = uh.read()
     uh.close()
-    cal = Calendar.from_string(ics)
+    cal = Calendar.from_ical(ics)
     data = {}
     data[cal.name] = dict(cal.items())
 
