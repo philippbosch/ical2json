@@ -33,7 +33,7 @@ def convert_from_url(url):
 
         comp_obj = {}
         for item in component.items():
-            comp_obj[item[0]] = unicode(item[1])
+            comp_obj[item[0]] = unicode(item[1].to_ical())
 
         data[cal.name][component.name].append(comp_obj)
 
